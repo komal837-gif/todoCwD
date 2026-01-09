@@ -19,6 +19,10 @@ export class TodoListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  trackById(index:number,todo:Itodo){
+    return todo.todoId;
+  }
+
   onTodoRemove(todo:Itodo){
       let matConfig = new MatDialogConfig
       matConfig.width='500px'

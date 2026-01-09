@@ -1,0 +1,8 @@
+<p>
+   {{getMsg || ' Are you sure, you want to remove this todo??'}}
+</p>
+
+<div class="d-flex justify-content-between align-items-center">
+    <button (click)="onClose(true)" mat-raised-button color="primary">Yes</button>
+    <button (click)="onClose(false)" mat-raised-button color="warn">No</button>
+</div>
